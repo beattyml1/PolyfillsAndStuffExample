@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <title></title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/js-webshim/minified/polyfiller.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/css_browser_selector.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!--[if lt IE 8]>
+    <link href="/css/bootstrap-ie7.css" rel="stylesheet"/>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">webshim.polyfill('picture forms forms-ext');</script>
+</head>
+<body>
+    <header class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-nav">Menu</button>
+                <a href="" class="navbar-brand" id="brand">Dr. Mario's Wound Clinic</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="images.html">Unresponsive images</a></li>
+                    <li><a href="images-responsive.html">Responsive Images</a></li>
+                    <li><a>Test Item</a></li>
+                    <li><a>Test Item</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Date and Time Controls</legend>
+                <div class="col-sm-12 col-md-5"><label class="col-sm-6 col-md-3"> Date</label><input type="date"/></div>
+                <div class="col-sm-12 col-md-5"><label class="col-sm-6 col-md-3">Time</label> <input type="time"/></div>
+                <div class="col-sm-12 col-md-5"><label class="col-sm-6 col-md-3">Month</label> <input type="month"/></div>
+                <div class="col-sm-12 col-md-5"><label class="col-sm-6 col-md-3">Date Time</label> <input type="datetime-local"/></div>
+            </fieldset>
+            <fieldset>
+                <legend>Other Controls</legend>
+                <div class="col-sm-5"><label class="col-sm-3">Email</label> <input type="email"/></div>
+                <div class="col-sm-5"><label class="col-sm-3">Phone</label> <input type="tel"/></div>
+                <div class="col-sm-5"><label class="col-sm-3">Decimal</label> <input type="number" step=".01"/></div>
+                <div class="col-sm-5"><label class="col-sm-3">Integer</label> <input type="number" step="1" pattern="\d*"/></div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

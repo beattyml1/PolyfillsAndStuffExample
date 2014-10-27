@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/js-webshim/minified/polyfiller.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+
+    <!--[if lt IE 8]>
+    <link href="/css/bootstrap-ie7.css" rel="stylesheet"/>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">webshim.polyfill('picture forms forms-ext');</script>
+</head>
+<body>
+    <header class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-nav">Menu</button>
+                <a href="" class="navbar-brand">Wound Expert</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation" id="main-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="images.html">Unresponsive images</a></li>
+                    <li><a href="images-responsive.html">Responsive Images</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <form>
+            <input type="email"/>
+            <input type="date"/>
+            <input type="time"/>
+            <input type="month"/>
+            <input type="datetime-local"/>
+            <input type="week"/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
